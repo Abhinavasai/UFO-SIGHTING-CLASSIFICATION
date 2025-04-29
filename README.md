@@ -19,7 +19,7 @@ The RabbitMQ server is set up locally using Docker.
 
 ## Demo Video
 
-You can view the walkthrough video [here](docs/HowToRun.mp4).
+You can view the walkthrough video [here](https://drive.google.com/file/d/1daLyBjTobclPJ1Z85rHLMbd6u9T7dnVL/view?usp=sharing).
 
 ### 1. Install UV
 If you don't have UV installed:
