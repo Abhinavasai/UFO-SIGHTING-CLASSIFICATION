@@ -1,0 +1,26 @@
+Bootstrap: docker
+From: python:3.10-slim
+
+%environment
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+    export PYTHONPATH=/app
+
+%files
+    . /app
+
+%post
+    apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        libffi-dev \
+        python3-dev \
+        curl
+    pip install --upgrade pip
+    pip install uv
+    cd /app
+    uv pip install . --system
+
+%runscript
+    export COMMAND="${COMMAND:-localhost}"
+    export PORT="${PORT:-5672}"
+    exec python3 /app/main.py

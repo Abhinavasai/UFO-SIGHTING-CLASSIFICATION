@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analyzing_sighting"
+version = "0.1.0"
+description = "UF CIS6930 Project 3: UFO Sighting Classification with Streamlit Dashboard"
+authors = [ { name = "Abhinava Sai Tirunagari", email = "abhinavatirunaga@ufl.edu" } ]
+dependencies = [
+    "pika",
+    "pandas",
+    "scikit-learn",
+    "streamlit",
+    "loguru"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "uv"]  # include uv and pytest for development
