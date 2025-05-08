@@ -3,7 +3,7 @@
 ## Name:
 Abhinava Sai Tirunagari
 
-## Assignment Description
+## Project Description
 This project implements a Python package that consumes UFO sighting messages from a RabbitMQ broker, classifies each sighting using a RandomForest machine learning model, and visualizes the classified sightings live on a Streamlit dashboard.
 
 The project supports:
